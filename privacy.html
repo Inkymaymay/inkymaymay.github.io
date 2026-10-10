@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botville privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">← Botville</a></p>
+  <h1>Privacy policy</h1>
+  <p class="lede">Last updated October 10, 2026.</p>
+
+  <p>Botville is a personal app that one person (the owner) runs on their own computer. Its only user is the owner, and the only Google account it connects to is the owner's own. This page explains what it does with that account's data.</p>
+
+  <h2>What Botville accesses</h2>
+  <ul>
+    <li><strong>Gmail, read-only</strong> (<code>gmail.readonly</code>): new messages in the inbox, so it can sort them and write digests.</li>
+    <li><strong>Gmail drafts</strong> (<code>gmail.compose</code>), only if the owner turns it on: to save a reply as a draft after the owner approves it. Botville never sends email.</li>
+  </ul>
+
+  <h2>What it stores, and for how long</h2>
+  <ul>
+    <li>For each email: sender, subject, date, a link back to Gmail, and Botville's sorting (topic, importance, any deadline, a one-line summary). Kept for 14 days, then deleted.</li>
+    <li>Message IDs it has already seen, kept for 3 days so the same email isn't handled twice.</li>
+    <li>Email bodies are not stored.</li>
+    <li>Everything is stored on the owner's own computer. Nothing is stored on a server run by anyone else.</li>
+    <li>The Google sign-in token is stored on the owner's computer and is never shown or shared.</li>
+  </ul>
+
+  <h2>Who else sees it</h2>
+  <ul>
+    <li><strong>Anthropic (Claude):</strong> to sort an email, summarise it, and (if the owner allows) draft a reply, Botville sends its sender, subject, date and up to 2,000 characters of its text to Anthropic's Claude API. Digest summaries are sent the same way to write the owner's daily briefing. This happens only to provide these features to the owner.</li>
+    <li><strong>The owner's own Discord server:</strong> urgent-email alerts and digest headlines are posted to a private Discord server that belongs to the owner.</li>
+    <li>No one else. Botville does not sell, rent or share Google user data, does not use it for advertising, and does not use it to train AI models.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Botville's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Removing access</h2>
+  <p>The owner can disconnect Gmail at any time in Botville (Setup → Gmail → Disconnect), which also cancels the sign-in with Google. Access can also be removed from Google's side at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="https://github.com/Inkymaymay">github.com/Inkymaymay</a>.</p>
+</main>
+<footer>Botville · a personal project by <a href="https://github.com/Inkymaymay">Inkymaymay</a></footer>
+</body>
+</html>
